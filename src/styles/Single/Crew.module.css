@@ -1,0 +1,112 @@
+.directors,
+.otherCrew,
+.crew {
+  display: flex;
+  column-gap: 60px;
+}
+
+.single_Director,
+.single_CrewMember {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  text-overflow: ellipsis;
+}
+
+.crew {
+  padding: 30px 0;
+  overflow-x: scroll;
+  align-items: center;
+}
+
+.crew::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
+.directors_name,
+.CrewMember_name {
+  font-size: 24px
+}
+
+.viewMore {
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 20px;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.viewMore:hover {
+  background-color: rgb(9, 8, 31);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .crew {
+    width: 800px;
+    margin: 0 40px
+  }
+
+  .single_Director,
+  .single_CrewMember {
+    row-gap: 12px;
+  }
+
+  .directors_name,
+  .CrewMember_name {
+    font-size: 18px
+  }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 391px) {
+  .crew {
+    margin: 0 40px
+  }
+
+  .single_Director,
+  .single_CrewMember {
+    row-gap: 8px;
+  }
+
+  .directors_name,
+  .CrewMember_name {
+    font-size: 12px
+  }
+
+  .CrewMember_job,
+  .directors_job {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  .directors,
+  .otherCrew,
+  .crew {
+    column-gap: 20px;
+  }
+
+  .crew {
+    margin: 0 40px;
+    padding: 10px;
+  }
+
+  .single_Director,
+  .single_CrewMember {
+    row-gap: 8px;
+  }
+
+  .directors_name,
+  .CrewMember_name {
+    font-size: 5px
+  }
+
+  .CrewMember_job,
+  .directors_job {
+    font-size: 8px;
+  }
+}

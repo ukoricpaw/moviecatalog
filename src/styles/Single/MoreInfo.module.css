@@ -1,0 +1,384 @@
+.moreInfoSection {
+  background-color: var(--dark-blue-color);
+  display: flex;
+  justify-content: center;
+}
+
+.moreInfo {
+  width: 1330px;
+}
+
+.InfoWrapper {
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-around;
+}
+
+.leftSection {
+  width: 70%;
+}
+
+.rightSection {
+  max-width: 200px;
+}
+
+.theCast {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  animation: opacity 1.5s ease-in
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.CastTitle {
+  font-size: 24px;
+}
+
+.factsOfSingle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.title {
+  font-weight: 700;
+}
+
+
+.factItem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+.keywords {
+  margin-top: 20px;
+  padding: 20px 0;
+  border-top: 1px solid var(--white-color)
+}
+
+.keywordTitle {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.keywordsList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.keyword {
+  padding: 8px;
+  background-color: rgb(7, 27, 44);
+  margin: 3px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 10px
+}
+
+.BtnContainer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.Button {
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+
+.Button:hover {
+  color: var(--light-gray-color)
+}
+
+.imagesContainer {
+  margin: 30px 0 0;
+  width: 100%;
+  height: 400px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50px;
+  filter: brightness(60%);
+  animation-name: Appearance;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
+}
+
+.imagesWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagesTitle {
+  margin-top: 30px;
+}
+
+@-webkit-keyframes Appearance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes Appearance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes Appearance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.rec {
+  margin: auto;
+  width: 90%;
+}
+
+.recWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.recTitle {
+  text-align: center;
+  font-size: 24px;
+}
+
+
+.imageOfNetwork {
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .moreInfo {
+    width: 800px;
+  }
+
+  .leftSection {
+    width: 60%;
+  }
+
+  .Button {
+    font-size: 16px;
+  }
+
+  .imagesContainer {
+    height: 250px;
+  }
+
+  .factsOfSingle {
+    row-gap: 20px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .value {
+    font-size: 12px;
+  }
+
+
+  .factItem {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+  }
+
+  .keyword {
+    padding: 5px;
+    font-size: 8px
+  }
+
+  .recTitle {
+    font-size: 18px;
+  }
+
+  .recWrapper {
+    margin: auto;
+    width: 90%;
+  }
+
+
+  .InfoWrapper {
+    column-gap: 50px;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .moreInfo {
+    width: 530px;
+  }
+
+  .leftSection {
+    width: 65%;
+  }
+
+  .Button {
+    font-size: 14px;
+  }
+
+  .imagesContainer {
+    height: 200px;
+  }
+
+  .factsOfSingle {
+    row-gap: 15px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .value {
+    font-size: 10px;
+  }
+
+  .CastTitle,
+  .imagesTitle {
+    font-size: 20px;
+  }
+
+
+  .factItem {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  .keyword {
+    padding: 5px;
+    font-size: 5px
+  }
+
+  .recTitle {
+    font-size: 18px;
+  }
+
+  .recWrapper {
+    margin: auto;
+    width: 100%;
+  }
+
+  .InfoWrapper {
+    column-gap: 100px;
+    padding: 16px 0;
+  }
+
+  .imageOfNetwork {
+    height: 30px;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .moreInfo {
+    width: 200px;
+  }
+
+  .leftSection {
+    width: 65%;
+  }
+
+  .Button {
+    font-size: 7px;
+  }
+
+  .imagesContainer {
+    height: 150px;
+  }
+
+  .image {
+    border-radius: 12px;
+  }
+
+  .factsOfSingle {
+    row-gap: 10px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .value {
+    font-size: 8px;
+  }
+
+  .CastTitle,
+  .imagesTitle {
+    font-size: 8px;
+  }
+
+
+  .factItem {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  .keyword {
+    padding: 5px;
+    font-size: 5px
+  }
+
+  .recTitle {
+    font-size: 18px;
+  }
+
+  .recWrapper {
+    margin: auto;
+    width: 100%;
+  }
+
+  .InfoWrapper {
+    column-gap: 60px;
+    padding: 16px 0;
+    margin: 0 10px;
+  }
+
+  .imageOfNetwork {
+    height: 30px;
+  }
+}

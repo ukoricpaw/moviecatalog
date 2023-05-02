@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: var(--white-color)
+}
+
+
+body,
+html {
+  background-color: rgb(21, 21, 32);
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(21, 21, 32);
+  border-radius: 15px;
+}
+
+.ownWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+:root {
+  --gray-color: rgb(44, 44, 44);
+  --light-gray-color: rgb(170, 170, 170);
+  --white-color: white;
+  --cursive-font: 'Fasthand', cursive;
+  --black-color: #000;
+  --white-gray-color: rgb(160, 160, 160);
+  --dark-blue-color: rgb(9, 16, 29);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.MuiPaginationItem-text {
+  color: var(--white-gray-color) !important;
+}

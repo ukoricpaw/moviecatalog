@@ -1,0 +1,11 @@
+.preloaderContainer {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.preloaderGif {
+  width: 100px;
+}

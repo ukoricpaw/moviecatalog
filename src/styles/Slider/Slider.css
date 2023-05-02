@@ -1,0 +1,67 @@
+.slider {
+  position: relative;
+  width: 100%;
+}
+
+.slick-next,
+.slick-prev {
+  top: 40% !important;
+  padding: 50px 0 !important;
+}
+
+.slick-slider {
+  margin: 0 -15px;
+}
+
+.leftarrow {
+  position: absolute;
+  top: 0;
+  top: 42%;
+  z-index: 10;
+  left: 2px;
+  user-select: none;
+  font-size: 70px;
+  cursor: pointer;
+  padding: 20px 10px 20px 15px;
+}
+
+.rightarrow {
+  position: absolute;
+  top: 42%;
+  z-index: 10;
+  right: 2px;
+  user-select: none;
+  cursor: pointer;
+  font-size: 70px;
+  padding: 20px 15px 20px 10px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+
+  .slick-next,
+  .slick-prev {
+    top: 30% !important;
+  }
+
+  .leftarrow,
+  .rightarrow {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .leftarrow,
+  .rightarrow {
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+
+  .leftarrow,
+  .rightarrow {
+    font-size: 18px;
+  }
+}

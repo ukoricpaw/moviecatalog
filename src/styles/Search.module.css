@@ -1,0 +1,280 @@
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 20px 20px 20px;
+}
+
+.searchWrapper {
+  width: 1347px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.allMediaContainer {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  width: 100%;
+}
+
+.mediaContainer,
+.mediaContainerPerson {
+  width: 100%;
+  display: flex;
+  column-gap: 30px;
+  border-radius: 15px;
+  background-color: var(--dark-blue-color);
+  cursor: pointer;
+}
+
+
+.imageWrapper {
+  width: 240px;
+  height: 250px;
+}
+
+.imageWrapperPerson {
+  width: 180px;
+  height: 180px;
+}
+
+.mediaImage,
+.mediaImagePerson {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.mediaImagePerson {
+  border-radius: 10px;
+  object-position: center;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.overview {
+  max-width: 710px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+.known_for {
+  margin-right: 15px;
+}
+
+.mediaTitle {
+  font-size: 24px;
+}
+
+.searchField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.searchFieldWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.searchButton {
+  height: 100%;
+  background-color: var(--dark-blue-color);
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.searchInput {
+  color: var(--black-color);
+  outline: none;
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+  background-color: var(--white-color);
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.date {
+  font-style: italic;
+  color: var(--light-gray-color)
+}
+
+.searchFieldContainer {
+  width: 1347px;
+  margin: auto;
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+.leftSection {
+  background-color: var(--dark-blue-color);
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  width: 400px;
+  height: 300px;
+  justify-content: center;
+}
+
+.leftSection_el {
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+  align-items: center;
+  padding: 20px 50px;
+  transition: background-color 0.15s;
+}
+
+.leftSection_el:hover {
+  background-color: var(--gray-color);
+}
+
+.total {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--light-gray-color);
+}
+
+.rightSection {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .searchWrapper {
+    width: 800px;
+  }
+
+  .leftSection {
+    width: 180px;
+    height: 180px;
+  }
+
+  .leftSection_el {
+    font-size: 12px;
+    padding: 10px 40px;
+  }
+
+  .overview {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .searchWrapper {
+    width: 500px;
+  }
+
+  .leftSection {
+    width: 120px;
+    height: 80px;
+  }
+
+  .leftSection_el {
+    font-size: 8px;
+    padding: 5px 10px;
+  }
+
+  .overview {
+    display: none;
+  }
+
+  .total {
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .imageWrapper {
+    width: 150px;
+    height: 150px;
+  }
+
+  .allMediaContainer {
+    column-gap: 20px;
+  }
+
+  .mediaTitle {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .imageWrapperPerson {
+    width: 120px;
+    height: 120px;
+  }
+
+  .rightSection {
+    row-gap: 20px;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .leftSection {
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .allMediaContainer {
+    flex-direction: column;
+  }
+
+  .rightSection {
+    width: 100%;
+    row-gap: 10px;
+  }
+
+  .imageWrapper {
+    width: 100px;
+    height: 100px;
+  }
+
+  .imageWrapperPerson {
+    width: 120px;
+    height: 100px;
+  }
+
+}

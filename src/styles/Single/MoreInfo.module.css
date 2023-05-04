@@ -104,7 +104,6 @@
 }
 
 .imagesContainer {
-  margin: 30px 0 0;
   width: 100%;
   height: 400px;
 }
@@ -127,7 +126,7 @@
 }
 
 .imagesTitle {
-  margin-top: 30px;
+  margin: 30px 0;
 }
 
 @-webkit-keyframes Appearance {
@@ -185,144 +184,235 @@
   object-fit: contain;
 }
 
-
-@media screen and (max-width: 1024px) and (min-width: 769px) {
-  .moreInfo {
-    width: 800px;
-  }
-
-  .leftSection {
-    width: 60%;
-  }
-
-  .Button {
-    font-size: 16px;
-  }
-
-  .imagesContainer {
-    height: 250px;
-  }
-
-  .factsOfSingle {
-    row-gap: 20px;
-  }
-
-  .title {
-    font-weight: 700;
-    font-size: 15px;
-  }
-
-  .value {
-    font-size: 12px;
-  }
-
-
-  .factItem {
-    display: flex;
-    flex-direction: column;
-    row-gap: 3px;
-  }
-
-  .keyword {
-    padding: 5px;
-    font-size: 8px
-  }
-
-  .recTitle {
-    font-size: 18px;
-  }
-
-  .recWrapper {
-    margin: auto;
-    width: 90%;
-  }
-
-
+@media (min-width:0px) {
   .InfoWrapper {
-    column-gap: 50px;
-  }
-
-
-}
-
-@media screen and (max-width: 768px) {
-  .moreInfo {
-    width: 530px;
+    flex-direction: column;
+    padding: 5px 0;
   }
 
   .leftSection {
-    width: 65%;
-  }
-
-  .Button {
-    font-size: 14px;
-  }
-
-  .imagesContainer {
-    height: 200px;
-  }
-
-  .factsOfSingle {
-    row-gap: 15px;
-  }
-
-  .title {
-    font-weight: 700;
-    font-size: 14px;
-  }
-
-  .value {
-    font-size: 10px;
-  }
-
-  .CastTitle,
-  .imagesTitle {
-    font-size: 20px;
-  }
-
-
-  .factItem {
-    display: flex;
-    flex-direction: column;
-    row-gap: 4px;
-  }
-
-  .keyword {
-    padding: 5px;
-    font-size: 5px
-  }
-
-  .recTitle {
-    font-size: 18px;
-  }
-
-  .recWrapper {
-    margin: auto;
     width: 100%;
   }
 
-  .InfoWrapper {
-    column-gap: 100px;
-    padding: 16px 0;
+  .rightSection {
+    max-width: 100%;
+    border-top: 3px solid var(--white-color);
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  .moreInfo {
+    width: 190px;
+  }
+
+  .factsOfSingle {
+    row-gap: 8px
+  }
+
+
+  .title {
+    font-size: 9px;
+  }
+
+  .value {
+    font-size: 7px;
+  }
+
+  .keywords {
+    margin-top: 8px;
+    padding: 6px 0;
+    border-top: 3px solid var(--white-color)
+  }
+
+  .keywordTitle {
+    font-size: 8px;
+    margin-bottom: 3px;
+  }
+
+
+  .keyword {
+    padding: 2px;
+    margin: 1px;
+    border-radius: 3px;
+    font-size: 5px
+  }
+
+  .CastTitle,
+  .recTitle {
+    font-size: 10px;
+  }
+
+  .imagesTitle {
+    margin: 8px 0;
+    font-size: 10px;
+  }
+
+  .theCast,
+  .recWrapper {
+    row-gap: 6px;
+  }
+
+  .BtnContainer {
+    margin-top: 4px;
+  }
+
+  .Button {
+    font-size: 8px;
+  }
+
+  .recWrapper {
+    margin-bottom: 3px;
+  }
+
+  .imagesContainer {
+    height: 100px;
+  }
+
+  .image {
+    border-radius: 12px;
   }
 
   .imageOfNetwork {
-    height: 30px;
+    width: 50px;
+    height: 20px;
+  }
+
+  .factsOfSingle {
+    row-gap: 6px;
   }
 }
 
+@media (min-width:320px) {
+  .InfoWrapper {
+    flex-direction: column;
+    padding: 5px 0;
+  }
 
-@media screen and (max-width: 390px) {
+  .leftSection {
+    width: 100%;
+  }
+
+  .rightSection {
+    max-width: 100%;
+  }
+
   .moreInfo {
-    width: 200px;
+    width: 240px;
+  }
+
+  .CastTitle,
+  .recTitle {
+    font-size: 12px;
+  }
+
+  .imagesTitle {
+    margin: 10px 0;
+    font-size: 12px;
+  }
+
+  .theCast,
+  .recWrapper {
+    row-gap: 8px;
+  }
+
+  .recWrapper {
+    margin-bottom: 8px;
+  }
+
+  .imagesContainer {
+    height: 130px;
+  }
+
+  .image {
+    border-radius: 12px;
+  }
+
+  .imageOfNetwork {
+    width: 50px;
+    height: 20px;
+  }
+
+}
+
+@media (min-width:400px) {
+  .InfoWrapper {
+    flex-direction: row;
+    padding: 10px 0;
+    justify-content: space-between;
   }
 
   .leftSection {
     width: 65%;
   }
 
-  .Button {
+  .rightSection {
+    max-width: 60px;
+    border: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .moreInfo {
+    width: 350px;
+  }
+
+  .factsOfSingle {
+    row-gap: 8px
+  }
+
+
+  .title {
+    font-size: 9px;
+  }
+
+  .value {
     font-size: 7px;
+  }
+
+  .keywords {
+    margin-top: 8px;
+    padding: 6px 0;
+    border-top: 2px solid var(--white-color)
+  }
+
+  .keywordTitle {
+    font-size: 8px;
+    margin-bottom: 3px;
+  }
+
+
+  .keyword {
+    padding: 2px;
+    margin: 1px;
+    border-radius: 3px;
+    font-size: 5px
+  }
+
+  .CastTitle,
+  .recTitle {
+    font-size: 14px;
+  }
+
+  .imagesTitle {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  .theCast,
+  .recWrapper {
+    row-gap: 8px;
+  }
+
+  .BtnContainer {
+    margin-top: 6px;
+  }
+
+  .Button {
+    font-size: 8px;
+  }
+
+  .recWrapper {
+    margin-bottom: 10px;
   }
 
   .imagesContainer {
@@ -330,55 +420,435 @@
   }
 
   .image {
-    border-radius: 12px;
+    border-radius: 18px;
+  }
+
+  .imageOfNetwork {
+    width: 100%;
+    height: 20px;
+  }
+}
+
+@media (min-width:480px) {
+  .InfoWrapper {
+    padding: 20px 0;
+    justify-content: space-around;
+  }
+
+  .leftSection {
+    width: 65%;
+  }
+
+  .rightSection {
+    max-width: 70px;
+  }
+
+  .moreInfo {
+    width: 500px;
   }
 
   .factsOfSingle {
-    row-gap: 10px;
+    row-gap: 10px
   }
 
+
   .title {
-    font-weight: 700;
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .value {
     font-size: 8px;
   }
 
-  .CastTitle,
-  .imagesTitle {
-    font-size: 8px;
+  .keywords {
+    margin-top: 10px;
+    padding: 8px 0;
+    border-top: 2px solid var(--white-color)
   }
 
-
-  .factItem {
-    display: flex;
-    flex-direction: column;
-    row-gap: 4px;
+  .keywordTitle {
+    font-size: 12px;
+    margin-bottom: 6px;
   }
+
 
   .keyword {
-    padding: 5px;
-    font-size: 5px
+    padding: 3px;
+    margin: 1px;
+    border-radius: 6px;
+    font-size: 6px
   }
 
+  .CastTitle,
   .recTitle {
     font-size: 18px;
   }
 
-  .recWrapper {
-    margin: auto;
-    width: 100%;
+  .imagesTitle {
+    margin: 10px 0;
+    font-size: 18px;
   }
 
-  .InfoWrapper {
-    column-gap: 60px;
-    padding: 16px 0;
-    margin: 0 10px;
+  .theCast,
+  .recWrapper {
+    row-gap: 10px;
+  }
+
+  .BtnContainer {
+    margin-top: 10px;
+  }
+
+  .Button {
+    font-size: 10px;
+  }
+
+  .recWrapper {
+    margin-bottom: 13px;
+  }
+
+  .imagesContainer {
+    height: 210px;
+  }
+
+  .image {
+    border-radius: 25px;
   }
 
   .imageOfNetwork {
-    height: 30px;
+    height: 25px;
   }
+}
+
+@media (min-width:600px) {
+  .InfoWrapper {
+    padding: 30px 0;
+  }
+
+  .leftSection {
+    width: 65%;
+  }
+
+  .rightSection {
+    max-width: 80px;
+  }
+
+  .moreInfo {
+    width: 620px;
+  }
+
+  .factsOfSingle {
+    row-gap: 12px
+  }
+
+
+  .title {
+    font-size: 12px;
+  }
+
+  .value {
+    font-size: 9px;
+  }
+
+  .keywords {
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid var(--white-color)
+  }
+
+  .keywordTitle {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+
+  .keyword {
+    padding: 4px;
+    margin: 2px;
+    border-radius: 8px;
+    font-size: 8px
+  }
+
+  .CastTitle,
+  .recTitle {
+    font-size: 18px;
+  }
+
+  .imagesTitle {
+    margin: 15px 0;
+    font-size: 18px;
+  }
+
+  .theCast,
+  .recWrapper {
+    row-gap: 15px;
+  }
+
+  .BtnContainer {
+    margin-top: 15px;
+  }
+
+  .Button {
+    font-size: 12px;
+  }
+
+  .recWrapper {
+    margin-bottom: 15px;
+  }
+
+  .imagesContainer {
+    height: 230px;
+  }
+
+  .image {
+    border-radius: 35px;
+  }
+
+  .imageOfNetwork {
+    height: 50px;
+  }
+}
+
+@media (min-width:801px) {
+  .InfoWrapper {
+    padding: 35px 0;
+  }
+
+  .leftSection {
+    width: 75%;
+  }
+
+  .rightSection {
+    max-width: 80px;
+  }
+
+  .moreInfo {
+    width: 800px;
+  }
+
+  .factsOfSingle {
+    row-gap: 12px
+  }
+
+
+  .title {
+    font-size: 12px;
+  }
+
+  .theCast,
+  .recWrapper {
+    row-gap: 20px;
+  }
+
+
+  .value {
+    font-size: 9px;
+  }
+
+  .keywords {
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid var(--white-color)
+  }
+
+  .keywordTitle {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+
+  .keyword {
+    padding: 4px;
+    margin: 2px;
+    border-radius: 8px;
+    font-size: 8px
+  }
+
+  .CastTitle,
+  .recTitle {
+    font-size: 24px;
+  }
+
+  .imagesTitle {
+    margin: 15px 0;
+    font-size: 24px;
+  }
+
+  .BtnContainer {
+    margin-top: 25px;
+  }
+
+  .Button {
+    font-size: 14px;
+  }
+
+  .imagesContainer {
+    height: 300px;
+  }
+
+  .image {
+    border-radius: 40px;
+  }
+
+}
+
+
+
+@media (min-width:1030px) {
+  .recWrapper {
+    row-gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .InfoWrapper {
+    padding: 35px 0;
+  }
+
+  .leftSection {
+    width: 75%;
+  }
+
+  .rightSection {
+    max-width: 150px;
+  }
+
+  .factsOfSingle {
+    row-gap: 18px
+  }
+
+  .moreInfo {
+    width: 1000px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .value {
+    font-size: 12px;
+  }
+
+  .keywords {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px solid var(--white-color)
+  }
+
+  .keywordTitle {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+
+  .keyword {
+    padding: 6px;
+    margin: 2px;
+    border-radius: 10px;
+    font-size: 10px
+  }
+
+  .BtnContainer {
+    margin-top: 25px;
+  }
+
+  .Button {
+    font-size: 18px;
+  }
+
+  .imagesContainer {
+    height: 350px;
+  }
+
+  .image {
+    border-radius: 45px;
+  }
+
+
+}
+
+@media (min-width:1100px) {
+  .InfoWrapper {
+    padding: 50px 0;
+  }
+
+  .leftSection {
+    width: 65%;
+  }
+
+  .rightSection {
+    max-width: 200px;
+  }
+
+  .moreInfo {
+    width: 1150px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .value {
+    font-size: 16px;
+  }
+
+  .factsOfSingle {
+    row-gap: 25px;
+  }
+
+  .keywords {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px solid var(--white-color)
+  }
+
+  .keywordTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+
+  .keyword {
+    padding: 8px;
+    margin: 3px;
+    border-radius: 15px;
+    font-size: 10px
+  }
+
+  .BtnContainer {
+    margin-top: 40px;
+  }
+
+  .Button {
+    font-size: 18px;
+  }
+
+  .imagesContainer {
+    height: 400px;
+  }
+
+  .image {
+    border-radius: 50px;
+  }
+
+
+}
+
+@media (min-width:1281px) {
+  .InfoWrapper {
+    padding: 50px 0;
+  }
+
+  .leftSection {
+    width: 70%;
+  }
+
+  .rightSection {
+    max-width: 200px;
+  }
+
+  .moreInfo {
+    width: 1330px;
+  }
+
+
+
 }

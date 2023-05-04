@@ -43,34 +43,172 @@
   font-size: 32px;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+
+@media (min-width:0px) {
+  .rightSection {
+    height: 15px;
+  }
+
   .navTitle {
-    font-size: 18px
+    font-size: 5px;
+    font-weight: 700;
   }
 
   .nav__Title {
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 8px;
   }
 
-  .rightSection {
-    height: 35px;
+  .navigation {
+    padding: 3px 15px;
   }
 
+  .link {
+    width: 18px;
+    height: 18px;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 320px) {
+  .rightSection {
+    height: 15px;
+  }
+
   .navTitle {
-    font-size: 14px
+    font-size: 7px;
+    font-weight: 700;
   }
 
   .nav__Title {
+    font-weight: 400;
+    font-size: 10px;
+  }
+
+  .navigation {
+    padding: 3px 15px;
+  }
+
+  .link {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+
+@media (min-width:480px) {
+  .rightSection {
+    height: 20px;
+  }
+
+  .navTitle {
+    font-size: 8px;
+    font-weight: 700;
+  }
+
+  .nav__Title {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .navigation {
+    padding: 8px 30px;
+  }
+
+  .link {
+    width: 35px;
+    height: 25px;
+  }
+}
+
+@media (min-width:600px) {
+  .rightSection {
+    height: 30px;
+  }
+
+  .navTitle {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .nav__Title {
+    font-weight: 400;
     font-size: 18px;
   }
 
-  .rightSection {
+  .navigation {
+    padding: 15px;
+  }
+
+  .link {
+    width: 45px;
     height: 30px;
   }
 }
 
+@media (min-width:801px) {
+  .rightSection {
+    height: 40px;
+  }
 
-@media screen and (max-width: 390px) {}
+  .navTitle {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .nav__Title {
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  .navigation {
+    padding: 20px;
+  }
+
+  .link {
+    width: 60px;
+    height: 38px;
+  }
+}
+
+@media (min-width:1025px) {
+  .rightSection {
+    height: 43px;
+  }
+
+  .navTitle {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .nav__Title {
+    font-weight: 400;
+    font-size: 26px;
+  }
+
+  .link {
+    width: 70px;
+    height: 50px;
+  }
+}
+
+@media (min-width:1281px) {
+  .rightSection {
+    height: 53px;
+  }
+
+  .navTitle {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .nav__Title {
+    font-weight: 400;
+    font-size: 32px;
+  }
+
+  .link {
+    width: 90px;
+    height: 80px;
+  }
+
+}

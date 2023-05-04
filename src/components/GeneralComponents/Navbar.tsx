@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from "../../styles/Nav.module.css"
 import HomeSvgSelector from '../HomeComponents/HomeSvgSelector'
 import movieDbLogo from "../../assets/icons/tmdb.png"
@@ -10,7 +9,7 @@ const Navbar = () => {
     <nav className={styles.nav}>
       <div className={styles.navigation}>
         <div className={styles.leftSection}>
-          <Link to="/">
+          <Link className={styles.link} to="/">
             <HomeSvgSelector id={svgS.icon} />
           </Link>
           <div className={styles.navTitle}>

@@ -1,4 +1,4 @@
-import React, { useState, FC } from 'react'
+import { useState, FC } from 'react'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import "../../../styles/Slider/Slider.css"
 
@@ -24,14 +24,18 @@ const Carousel: FC<CarouselType> = ({ children }) => {
 
   return (
     <section className="slider">
-      {length <= 1 ? "" : <IoIosArrowBack fill='white' className="leftarrow" onClick={prevSlide} />}
+      {length <= 1 ? "" :
+        <div className="leftArrow" onClick={prevSlide}>
+          <IoIosArrowBack fill='white' className="leftarrow" />
+        </div>}
       {children.map((child, index) => {
         return <div key={index} className={index === current ? 'active' : 'non-active'}>{
           index === current && child
-        }</div>
+        }
+        </div>
       })}
 
-      {length <= 1 ? "" : <IoIosArrowForward fill='white' className="rightarrow" onClick={nextSlide} />}
+      {length <= 1 ? "" : <div className="rightArrow" onClick={nextSlide}><IoIosArrowForward fill='white' className="rightarrow" /></div>}
     </section>
   )
 }

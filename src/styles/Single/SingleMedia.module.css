@@ -88,6 +88,10 @@
   color: var(--white-gray-color)
 }
 
+/* .info {
+  display: none;
+} */
+
 .singleMovieInfo {
   display: flex;
   column-gap: 20px;
@@ -148,44 +152,285 @@
 
 /* Media queries */
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
-  .single {
-    width: 1000px;
+@media (min-width:0px) {
+  .single_column {
+    margin-top: 8px;
+    height: 120px;
   }
 
   .single_poster {
-    width: 260px;
-    height: 300px;
+    width: 60px;
+    height: 100px;
+    border-radius: 3px;
+    margin: 10px;
+  }
+
+  .singleTitle {
+    font-size: 8px;
+    letter-spacing: 1px;
+    margin-bottom: 1px;
+  }
+
+  .voteAverage {
+    margin-top: 2px;
+    column-gap: 2px;
+    font-size: 4px;
+  }
+
+  .voteAverageImg {
+    width: 6px;
+    height: 6px;
+  }
+
+  .overview {
+    margin-top: 2px;
+    max-width: 180px;
+    row-gap: 2px;
+    font-size: 4px;
+  }
+
+  .overviewTitle {
+    font-size: 6px;
+  }
+
+  .tagline {
+    margin-top: 4px;
+    font-size: 4px;
+  }
+
+  .singleMovieInfo {
+    column-gap: 3px;
+    font-size: 4px;
+  }
+
+  .singleDetails {
+    column-gap: 1px;
+  }
+
+  .genres {
+    column-gap: 3px;
+  }
+}
+
+@media (min-width:320px) {
+  .single_column {
+    margin-top: 12px;
+    height: 135px;
+  }
+
+  .single_poster {
+    width: 75px;
+    height: 115px;
+    border-radius: 6px;
+    margin: 12px;
+  }
+
+  .overview {
+    margin-top: 2px;
+    max-width: 200px;
+    row-gap: 2px;
+    font-size: 4px;
+  }
+}
+
+@media (min-width:400px) {
+  .single_column {
+    margin-top: 12px;
+    height: 190px;
+  }
+
+  .single_poster {
+    width: 100px;
+    height: 160px;
+    border-radius: 6px;
+    margin: 15px;
+  }
+
+  .singleTitle {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 1px;
+  }
+
+  .voteAverage {
+    margin-top: 3px;
+    column-gap: 3px;
+    font-size: 6px;
+  }
+
+  .voteAverageImg {
+    width: 8px;
+    height: 8px;
+  }
+
+  .overview {
+    margin-top: 3px;
+    max-width: 290px;
+    row-gap: 3px;
+    font-size: 6px;
+  }
+
+  .overviewTitle {
+    font-size: 8px;
+  }
+
+  .tagline {
+    margin-top: 6px;
+    font-size: 6px;
+  }
+
+  .singleMovieInfo {
+    column-gap: 6px;
+    font-size: 7px;
+  }
+
+  .singleDetails {
+    column-gap: 4px;
+  }
+
+  .genres {
+    column-gap: 5px;
+  }
+}
+
+@media (min-width:480px) {
+  .single_column {
+    margin-top: 15px;
+    height: 230px;
+  }
+
+  .single_poster {
+    width: 120px;
+    height: 190px;
+    border-radius: 10px;
+    margin: 18px;
+  }
+
+  .singleTitle {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+
+  .voteAverage {
+    margin-top: 4px;
+    column-gap: 4px;
+    font-size: 8px;
+  }
+
+  .voteAverageImg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .overview {
+    margin-top: 5px;
+    max-width: 400px;
+    row-gap: 5px;
+    font-size: 7px;
+  }
+
+  .overviewTitle {
+    font-size: 10px;
+  }
+
+  .tagline {
+    margin-top: 10px;
+    font-size: 7px;
+  }
+
+  .singleMovieInfo {
+    column-gap: 6px;
+    font-size: 7px;
+  }
+
+  .genres {
+    column-gap: 5px;
+  }
+}
+
+@media (min-width:600px) {
+  .single_column {
+    margin-top: 25px;
+    height: 280px;
+  }
+
+  .single_poster {
+    width: 155px;
+    height: 240px;
+    border-radius: 15px;
+    margin: 24px;
   }
 
   .singleTitle {
     font-size: 18px;
-    letter-spacing: 3px;
-    margin-bottom: 8px;
-  }
-
-  .yearOfTitle {
-    font-weight: 500;
-    color: var(--white-gray-color);
-    padding-left: 10px;
-  }
-
-  .singleMovieInfo {
-    display: flex;
-    column-gap: 20px;
-    font-size: 12px;
-  }
-
-  .genres {
-    display: flex;
-    column-gap: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
   }
 
   .voteAverage {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    column-gap: 5px;
+    margin-top: 8px;
+    column-gap: 6px;
+    font-size: 10px;
+  }
+
+  .voteAverageImg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .overview {
+    margin-top: 8px;
+    max-width: 480px;
+    row-gap: 8px;
+    font-size: 9px;
+  }
+
+  .overviewTitle {
+    font-size: 12px;
+  }
+
+  .tagline {
+    margin-top: 12px;
+    font-size: 10px;
+  }
+
+  .singleMovieInfo {
+    column-gap: 10px;
+    font-size: 10px;
+  }
+
+  .singleDetails {
+    column-gap: 6px;
+  }
+
+  .genres {
+    column-gap: 8px;
+  }
+}
+
+@media (min-width:801px) {
+  .single_column {
+    margin-top: 30px;
+    height: 360px;
+  }
+
+  .single_poster {
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 30px;
+  }
+
+  .singleTitle {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+  }
+
+  .voteAverage {
+    margin-top: 8px;
+    column-gap: 6px;
     font-size: 12px;
   }
 
@@ -195,184 +440,154 @@
   }
 
   .overview {
-    font-size: 12px;
-    margin-top: 30px;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-  }
-
-  .singleDetails {
-    margin: 0 30px;
+    margin-top: 12px;
+    max-width: 600px;
+    row-gap: 10px;
+    font-size: 13px;
   }
 
   .overviewTitle {
     font-size: 18px;
-    font-weight: 500;
   }
 
-  .single_column {
-    height: 400px;
-  }
-}
-
-@media screen and (max-width: 768px) and (min-width: 391px) {
-  .single_poster {
-    width: 220px;
-    height: 200px;
-  }
-
-  .single {
-    width: 700px;
-  }
-
-  .singleTitle {
+  .tagline {
+    margin-top: 18px;
     font-size: 14px;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-  }
-
-  .yearOfTitle {
-    font-weight: 500;
-    color: var(--white-gray-color);
-    padding-left: 10px;
   }
 
   .singleMovieInfo {
-    display: flex;
-    column-gap: 15px;
-    font-size: 8px;
+    column-gap: 12px;
+    font-size: 12px;
+  }
+
+  .singleDetails {
+    column-gap: 10px;
   }
 
   .genres {
-    display: flex;
-    column-gap: 10px;
+    column-gap: 8px;
   }
 
-  .voteAverage {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    column-gap: 5px;
-    font-size: 8px;
-  }
-
-  .voteAverageImg {
-    width: 12px;
-    height: 12px;
-  }
-
-  .overview {
-    font-size: 10px;
-    margin-top: 10px;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 12px;
-  }
-
-  .singleDetails {
-    margin: 0 30px;
-    column-gap: 30px;
-  }
-
-  .overviewTitle {
-    font-size: 12px;
-    font-weight: 500;
-  }
-
-  .single_column {
-    height: 280px;
-  }
-
-  .tagline {
-    font-size: 12px;
-    margin-top: 8px
-  }
 }
 
+@media (min-width:1025px) {
+  .single_column {
+    margin-top: 50px;
+    height: 450px;
+  }
 
-@media screen and (max-width: 390px) {
   .single_poster {
-    width: 100px;
-    height: 160px;
-  }
-
-  .single {
-    width: 300px;
-  }
-
-  .singleDetails {
-    margin: 0 40px;
-    column-gap: 10px;
+    width: 250px;
+    height: 380px;
+    border-radius: 15px;
+    margin: 30px;
   }
 
 
   .singleTitle {
-    text-align: center;
-    font-size: 10px;
-    letter-spacing: 2px;
-    margin-bottom: 2px;
-  }
-
-
-  .yearOfTitle {
-    font-weight: 500;
-    color: var(--white-gray-color);
-    padding-left: 10px;
-  }
-
-  .singleMovieInfo {
-    display: flex;
-    column-gap: 10px;
-    font-size: 5px;
-    justify-content: center;
-  }
-
-  .genres {
-    display: flex;
-    column-gap: 10px;
+    font-size: 26px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
   }
 
   .voteAverage {
-    justify-content: center;
-    margin-top: 6px;
-    display: flex;
-    align-items: center;
-    column-gap: 5px;
-    font-size: 7px;
+    margin-top: 10px;
+    column-gap: 10px;
+    font-size: 16px;
   }
 
   .voteAverageImg {
-    width: 12px;
-    height: 12px;
+    width: 25px;
+    height: 25px;
   }
 
   .overview {
-    font-size: 8px;
-    margin-top: 5px;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
-    display: none;
+    margin-top: 18px;
+    max-width: 800px;
+    row-gap: 15px;
+    font-size: 16px;
+  }
+
+  .overviewTitle {
+    font-size: 22px;
   }
 
   .tagline {
-    font-size: 12px;
-    text-align: center;
-    margin-top: 8px
+    margin-top: 25px;
+    font-size: 18px;
+  }
+
+  .singleMovieInfo {
+    column-gap: 15px;
+    font-size: 16px;
+  }
+
+  .singleDetails {
+    column-gap: 20px;
+  }
+
+  .genres {
+    column-gap: 12px;
   }
 
 
-  .overviewTitle {
-    font-size: 10px;
-    font-weight: 500;
-  }
+}
+
+@media (min-width:1281px) {
 
   .single_column {
-    height: 200px;
+    margin-top: 50px;
+    height: 510px;
   }
+
+  .single_poster {
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+  }
+
+  .singleTitle {
+    font-size: 26px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+  }
+
+  .voteAverage {
+    margin-top: 10px;
+    column-gap: 10px;
+  }
+
+  .voteAverageImg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .overview {
+    margin-top: 30px;
+    max-width: 900px;
+    row-gap: 15px;
+  }
+
+  .overviewTitle {
+    font-size: 24px;
+  }
+
+  .tagline {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  .singleMovieInfo {
+    column-gap: 20px;
+  }
+
+  .singleDetails {
+    column-gap: 50px;
+  }
+
+  .genres {
+    column-gap: 15px;
+  }
+
 
 }

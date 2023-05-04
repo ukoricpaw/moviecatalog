@@ -1,5 +1,4 @@
-import React from 'react'
-import LoadingGif from "../../assets/loading-4802.gif"
+import LoadingGif from "../../assets/preloader.gif"
 import styles from "../../styles/ForPreloader.module.css"
 
 const Preloader = () => {

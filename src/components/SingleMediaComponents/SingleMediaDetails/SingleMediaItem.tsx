@@ -24,7 +24,7 @@ const SingleMediaItem: FC<MediaItemProps> = ({ item }) => {
             <div className={styles.starRateContainer}>
               <img className={styles.starIcon} src={starIcon} alt="Rate" />
             </div>
-            <p className={styles.rate}>{item.data.vote_average}</p>
+            <p className={styles.rate}>{item.data.vote_average.toString().slice(0, 3)}</p>
           </div>
           <div className={styles.line}></div>
           <p className={styles.releaseDate}>{Intl.DateTimeFormat("en-US", {

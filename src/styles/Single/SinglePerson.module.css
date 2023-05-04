@@ -168,7 +168,7 @@
 }
 
 .moreButton {
-  flex: 1;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,31 +190,765 @@
   font-weight: 700;
 }
 
+@media (min-width:0px) and (max-width: 479px) {
+  .IDsContainer {
+    display: none;
+  }
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+}
 
-  .IdLink {
+@media (min-width: 0px) {
+  .singlePersonWrapper {
+    width: 240px;
+    column-gap: 18px;
+    padding: 12px;
+  }
 
-    height: 30px;
-    width: 30px;
+  .imageOfPerson {
+    height: 80px;
+  }
 
+  .profileImage {
+    border-radius: 4px;
+  }
+
+  .leftSection {
+    width: 50px;
+    row-gap: 5px;
+  }
+
+  .RightSection {
+    max-width: 70%;
+    row-gap: 2px;
+
+  }
+
+  .knownFor {
+    row-gap: 0px;
+  }
+
+  .about {
+    row-gap: 4px;
+    padding: 1px;
+  }
+
+  .listTitle {
+    font-size: 8px;
+  }
+
+  .aboutItem {
+    row-gap: 1px;
+  }
+
+  .title {
+    font-size: 6px;
+  }
+
+  .name {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .age {
+    padding-left: 5px;
+  }
+
+  .value {
+    font-size: 4px;
+  }
+
+  .fullBiography,
+  .anotherPartOfBiography,
+  .anotherPartOfBiographyNoHidden {
+    font-size: 4.5px;
+    line-height: 1.7;
+    max-width: 150px;
+  }
+
+  .biographyTitle {
+    font-size: 6px;
+    margin-bottom: 3px;
+  }
+
+
+  .readMore {
+    font-size: 4px;
+    margin-top: 3px;
+  }
+
+  .moreButton {
+    padding: 8px 0;
+    height: 1px;
+    border-radius: 8px;
+    margin-top: 5px;
+  }
+
+  .knownForTitle {
+    font-size: 8px;
+    margin-bottom: 10px
+  }
+
+  .moreTitle {
+    font-size: 8px;
+  }
+
+  .knownForList {
+    justify-content: center;
+    margin: 5px 0 10px 0;
+    height: 140px;
   }
 }
 
-@media screen and (max-width: 768px) {}
+@media (min-width: 300px) {
+  .singlePersonWrapper {
+    width: 310px;
+    column-gap: 23px;
+    padding: 15px;
+  }
 
-.IdLink {
+  .imageOfPerson {
+    height: 100px;
+  }
 
-  height: 20px;
-  width: 20px;
+  .profileImage {
+    border-radius: 8px;
+  }
+
+  .leftSection {
+    width: 75px;
+    row-gap: 10px;
+  }
+
+  .RightSection {
+    max-width: 80%;
+    row-gap: 5px;
+  }
+
+  .about {
+    row-gap: 8px;
+    padding: 1px;
+  }
+
+  .listTitle {
+    font-size: 10px;
+  }
+
+  .aboutItem {
+    row-gap: 1px;
+  }
+
+  .title {
+    font-size: 8px;
+  }
+
+  .name {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .age {
+    padding-left: 5px;
+  }
+
+  .value {
+    font-size: 6px;
+  }
+
+  .fullBiography,
+  .anotherPartOfBiography,
+  .anotherPartOfBiographyNoHidden {
+    font-size: 6px;
+    line-height: 1.6;
+    max-width: 200px;
+  }
+
+  .biographyTitle {
+    font-size: 8px;
+    margin-bottom: 3px;
+  }
+
+
+  .readMore {
+    font-size: 6px;
+    margin-top: 5px;
+  }
+
+  .moreButton {
+    padding: 15px 0;
+    height: 1px;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+
+  .knownForTitle {
+    font-size: 14px;
+    margin-bottom: 10px
+  }
+
+  .moreTitle {
+    font-size: 12px;
+  }
+
+  .knownForList {
+    justify-content: center;
+    margin: 15px 0 30px 0;
+    height: 140px;
+  }
+}
+
+@media (min-width: 350px) {
+  .singlePersonWrapper {
+    width: 420px;
+    column-gap: 30px;
+    padding: 15px;
+  }
+
+  .imageOfPerson {
+    height: 130px;
+  }
+
+  .profileImage {
+    border-radius: 8px;
+  }
+
+  .leftSection {
+    width: 100px;
+    row-gap: 10px;
+  }
+
+  .RightSection {
+    max-width: 60%;
+    row-gap: 10px;
+  }
+
+  .about {
+    row-gap: 8px;
+    padding: 1px;
+  }
+
+  .listTitle {
+    font-size: 12px;
+  }
+
+  .aboutItem {
+    row-gap: 1px;
+  }
+
+  .title {
+    font-size: 10px;
+  }
+
+  .name {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .age {
+    padding-left: 5px;
+  }
+
+  .value {
+    font-size: 7px;
+  }
+
+  .fullBiography,
+  .anotherPartOfBiography,
+  .anotherPartOfBiographyNoHidden {
+    font-size: 8px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .biographyTitle {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+
+  .readMore {
+    font-size: 6px;
+    margin-top: 5px;
+  }
+
+  .moreButton {
+    height: 1px;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 20px 0;
+  }
+
+  .knownForTitle {
+    font-size: 14px;
+    margin-bottom: 10px
+  }
+
+  .moreTitle {
+    font-size: 16px;
+  }
+
+  .knownForList {
+    margin: 30px 0;
+    height: 180px;
+  }
+}
+
+
+
+@media (min-width:480px) {
+  .IDsContainer {
+    column-gap: 4px;
+    row-gap: 4px;
+    padding: 8px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+
+  .IdLink {
+    height: 14px;
+    width: 14px;
+  }
+
+  .visitTitle {
+    padding: 2px;
+    border-radius: 10px;
+    top: -20px;
+    left: -20px;
+    font-size: 8px;
+  }
+
+  .singlePersonWrapper {
+    width: 500px;
+    column-gap: 35px;
+    padding: 35px;
+  }
+
+  .imageOfPerson {
+    height: 180px;
+  }
+
+  .profileImage {
+    border-radius: 16px;
+  }
+
+  .leftSection {
+    width: 120px;
+    row-gap: 10px;
+  }
+
+  .RightSection {
+    max-width: 60%;
+    row-gap: 10px;
+  }
+
+  .about {
+    row-gap: 12px;
+    padding: 1px;
+  }
+
+  .listTitle {
+    font-size: 14px;
+  }
+
+  .aboutItem {
+    row-gap: 1.5px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .name {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .age {
+    padding-left: 5px;
+  }
+
+  .value {
+    font-size: 8px;
+  }
+
+  .fullBiography,
+  .anotherPartOfBiography,
+  .anotherPartOfBiographyNoHidden {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .biographyTitle {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+
+  .readMore {
+    font-size: 8px;
+    margin-top: 10px;
+  }
+
+  .moreButton {
+    height: 4px;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+
+  .knownForTitle {
+    font-size: 20px;
+    margin-bottom: 20px
+  }
+
+  .moreTitle {
+    font-size: 18px;
+  }
+
+  .knownForList {
+    margin: 30px 0;
+    height: 200px;
+  }
+}
+
+@media (min-width:600px) {
+  .IDsContainer {
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 8px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+
+  .IdLink {
+    height: 18px;
+    width: 18px;
+  }
+
+  .visitTitle {
+    padding: 5px;
+    border-radius: 10px;
+    top: -35px;
+    left: -40px;
+    font-size: 12px;
+  }
+
+  .singlePersonWrapper {
+    width: 630px;
+    column-gap: 40px;
+    padding: 28px;
+  }
+
+  .imageOfPerson {
+    height: 230px;
+  }
+
+  .profileImage {
+    border-radius: 20px;
+  }
+
+  .leftSection {
+    width: 150px;
+    row-gap: 12px;
+  }
+
+  .RightSection {
+    max-width: 65%;
+    row-gap: 15px;
+  }
+
+  .about {
+    row-gap: 14px;
+    padding: 1px;
+  }
+
+  .listTitle {
+    font-size: 18px;
+  }
+
+  .aboutItem {
+    row-gap: 4px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .name {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .age {
+    padding-left: 5px;
+  }
+
+  .value {
+    font-size: 12px;
+  }
+
+  .fullBiography,
+  .anotherPartOfBiography,
+  .anotherPartOfBiographyNoHidden {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .biographyTitle {
+    font-size: 18px;
+  }
+
+
+  .readMore {
+    font-size: 10px;
+    margin-top: 12px;
+  }
+
+  .moreButton {
+    height: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 30px 0;
+  }
+
+  .knownForTitle {
+    font-size: 20px;
+  }
+
+  .moreTitle {
+    font-size: 24px;
+  }
+
+  .knownForList {
+    margin: 30px 0;
+    height: 230px;
+  }
 
 }
 
-@media screen and (max-width: 390px) {
+@media (min-width:801px) {
+  .singlePersonWrapper {
+    width: 800px;
+    column-gap: 60px;
+    padding: 35px;
+  }
+
+  .imageOfPerson {
+    height: 250px;
+  }
+
+  .profileImage {
+    border-radius: 25px;
+  }
+
+  .leftSection {
+    width: 180px;
+    row-gap: 20px;
+  }
+
+  .RightSection {
+    max-width: 65%;
+    row-gap: 15px;
+  }
+
+  .knownFor {
+    row-gap: 0px;
+  }
+
+  .about {
+    row-gap: 22px;
+    padding: 5px;
+  }
+
+  .listTitle {
+    font-size: 24px;
+  }
+
+  .aboutItem {
+    row-gap: 4px;
+  }
+
+  .title {
+    font-size: 19px;
+  }
+
+  .name {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .biographyTitle {
+    font-size: 24px;
+  }
+
+
+  .age {
+    padding-left: 5px;
+  }
+
+  .value {
+    font-size: 14px;
+  }
+
+  .fullBiography,
+  .anotherPartOfBiography,
+  .anotherPartOfBiographyNoHidden {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+
+  .readMore {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .moreButton {
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+
+  .knownForTitle {
+    font-size: 24px;
+  }
+
+  .moreTitle {
+    font-size: 32px;
+  }
+
+  .knownForList {
+    margin: 30px 0;
+    column-gap: 20px;
+    height: 320px;
+  }
+}
+
+
+@media (min-width:1030px) {
+  .IDsContainer {
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 12px;
+    border-radius: 18px;
+    margin-bottom: 15px;
+  }
+
   .IdLink {
+    height: 30px;
+    width: 30px;
+  }
 
-    height: 10px;
-    width: 10px;
+  .visitTitle {
+    padding: 8px;
+    border-radius: 12px;
+    top: -50px;
+    left: -40px;
+    font-size: 18px;
+  }
 
+  .singlePersonWrapper {
+    width: 1000px;
+    column-gap: 55px;
+    padding: 35px;
+  }
+
+  .imageOfPerson {
+    height: 270px;
+  }
+
+  .profileImage {
+    border-radius: 30px;
+  }
+
+  .leftSection {
+    width: 200px;
+    row-gap: 25px;
+  }
+
+  .RightSection {
+    max-width: 65%;
+    row-gap: 15px;
+  }
+
+  .knownFor {
+    row-gap: 30px;
+  }
+}
+
+@media (min-width:1100px) {
+  .IDsContainer {
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .IdLink {
+    height: 40px;
+    width: 40px;
+  }
+
+  .visitTitle {
+    padding: 10px;
+    border-radius: 15px;
+    top: -70px;
+    left: -40px;
+  }
+
+  .singlePersonWrapper {
+    width: 1140px;
+    column-gap: 70px;
+    padding: 35px;
+  }
+
+  .imageOfPerson {
+    height: 320px;
+  }
+
+  .profileImage {
+    border-radius: 35px;
+  }
+
+  .leftSection {
+    width: 250px;
+    row-gap: 25px;
+  }
+
+  .RightSection {
+    max-width: 60%;
+    row-gap: 15px;
+  }
+
+  .knownFor {
+    row-gap: 30px;
+  }
+}
+
+@media (min-width:1281px) {
+  .singlePersonWrapper {
+    width: 1260px;
+    column-gap: 50px;
+    padding: 40px;
+  }
+
+  .imageOfPerson {
+    height: 350px;
+  }
+
+  .profileImage {
+    border-radius: 70px;
+  }
+
+  .leftSection {
+    width: 250px;
+    row-gap: 30px;
+  }
+
+  .RightSection {
+    max-width: 70%;
+    row-gap: 15px;
+  }
+
+  .knownFor {
+    row-gap: 140px;
   }
 }

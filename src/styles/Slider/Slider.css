@@ -13,55 +13,167 @@
   margin: 0 -15px;
 }
 
-.leftarrow {
+.leftArrow {
   position: absolute;
   top: 0;
-  top: 42%;
+  bottom: 0;
+  width: 50px;
+  display: flex;
+  justify-content: center;
   z-index: 10;
-  left: 2px;
-  user-select: none;
-  font-size: 70px;
+  align-items: center;
   cursor: pointer;
-  padding: 20px 10px 20px 15px;
+}
+
+
+.rightArrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  align-items: center;
+  cursor: pointer;
+}
+
+.leftarrow {
+  user-select: none;
+  font-size: 50px;
 }
 
 .rightarrow {
-  position: absolute;
-  top: 42%;
   z-index: 10;
-  right: 2px;
   user-select: none;
-  cursor: pointer;
-  font-size: 70px;
-  padding: 20px 15px 20px 10px;
+  font-size: 50px;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+
+@media (min-width:0px) {
+
+
+  .leftArrow,
+  .rightArrow {
+    width: 30px;
+    font-size: 30px;
+  }
 
   .slick-next,
   .slick-prev {
-    top: 30% !important;
+    top: 32% !important;
+    padding: 10px 0 !important;
+    font-size: 10px;
   }
 
-  .leftarrow,
-  .rightarrow {
+  .slick-prev {
+    left: -15px !important
+  }
+
+  .slick-next {
+    right: -15px !important;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 12px !important;
+  }
+
+}
+
+@media (min-width: 320px) {
+
+  .leftArrow,
+  .rightArrow {
+    width: 35px;
+  }
+
+  .slick-next,
+  .slick-prev {
+    top: 34% !important;
+    padding: 10px 0 !important;
+    font-size: 10px;
+  }
+
+  .slick-prev {
+    left: -18px !important
+  }
+
+  .slick-next {
+    right: -18px !important;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 14px !important;
+  }
+}
+
+@media (min-width:480px) {
+
+  .leftArrow,
+  .rightArrow {
+    width: 45px;
+  }
+}
+
+@media (min-width:600px) {
+
+  .leftArrow,
+  .rightArrow {
+    width: 45px;
+  }
+}
+
+
+@media (min-width:801px) {
+
+  .leftArrow,
+  .rightArrow {
+    width: 55px;
+  }
+
+  .slick-next,
+  .slick-prev {
+    top: 36% !important;
+    padding: 10px 0 !important;
+    font-size: 10px;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 16px !important;
+  }
+}
+
+
+@media (min-width:1025px) {
+
+  .leftArrow,
+  .rightArrow {
+    width: 60px;
     font-size: 40px;
   }
-}
 
-@media screen and (max-width: 768px) {
+  .slick-next,
+  .slick-prev {
+    top: 40% !important;
+    padding: 10px 0 !important;
+    font-size: 10px;
+  }
 
-  .leftarrow,
-  .rightarrow {
-    font-size: 30px;
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 18px !important;
   }
 }
 
+@media (min-width:1281px) {
 
-@media screen and (max-width: 390px) {
+  .leftArrow,
+  .rightArrow {
+    width: 80px;
 
-  .leftarrow,
-  .rightarrow {
-    font-size: 18px;
   }
 }

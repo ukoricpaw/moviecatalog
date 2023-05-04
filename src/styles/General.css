@@ -57,3 +57,16 @@ header {
 .MuiPaginationItem-text {
   color: var(--white-gray-color) !important;
 }
+
+@media (min-width:0px) {
+  body::-webkit-scrollbar {
+    width: 4px;
+  }
+
+}
+
+@media (min-width:801px) {
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+}

@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styles from ".././../../styles/Home/Home.module.css"
 import Carousel from './Carousel'
 import HeaderItem from './HeaderItem'

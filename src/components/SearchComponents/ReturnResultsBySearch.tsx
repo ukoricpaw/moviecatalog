@@ -33,7 +33,7 @@ const ReturnResultsBySearch: FC<ReturnResultsProps> = ({ media, type }) => {
         {results[type].results.length !== 0 ?
           results[type].results.map(result => <Link key={result.id} to={`/${media}/${result.id}`}>
             <MediaSearchItem media={{ media_type: media, data: result } as MediaItemsTypeWithPerson} /></Link>)
-          : <div>There are no results</div>
+          : <div className={styles.noResults}>There are no results</div>
         }
 
         <div className={styles.pagination}>

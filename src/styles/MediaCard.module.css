@@ -121,40 +121,387 @@
   font-weight: 700;
 }
 
-
-@media screen and (max-width: 768px) {
-  .cardWrapper {
-    width: 500px;
-  }
-
+@media (min-width:0px) {
   .card {
-    width: 150px;
+    width: 45px;
   }
 
   .imageContainer {
-    height: 250px;
+    height: 75px;
+  }
+
+  .cardWrapper {
+    width: 135px
+  }
+
+  .cardsTitle {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+  }
+
+  .image {
+    border-radius: 6px;
+  }
+
+  .cardTitle {
+    font-size: 6px;
+  }
+
+  .rating {
+    column-gap: 2px;
+  }
+
+  .rate {
+    font-size: 8px;
+  }
+
+  .starRateContainer {
+    width: 10px;
+    height: 10px;
+  }
+
+  .line {
+    margin: 3px 0;
+    height: 1px;
+    width: 30px;
+  }
+
+  .releaseDate {
+    font-size: 3px;
+    font-weight: 700;
+  }
+
+
+  .hiddenInfo {
+    bottom: 23px;
+    left: 8px;
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
-
+@media (min-width: 320px) {
   .cardWrapper {
-    width: 600px;
+    width: 130px
   }
-
 }
 
-@media screen and (max-width: 390px) {
-  .cardWrapper {
-    width: 200px;
-  }
-
+@media (min-width:350px) {
   .card {
+    width: 60px;
+  }
+
+  .imageContainer {
+    height: 100px;
+  }
+
+  .cardWrapper {
+    width: 240px
+  }
+
+  .cardsTitle {
+    font-size: 14px;
+  }
+
+  .cardTitle {
+    font-size: 6px;
+  }
+
+  .image {
+    border-radius: 10px;
+  }
+
+  .rating {
+    column-gap: 5px;
+  }
+
+  .rate {
+    font-size: 14px;
+  }
+
+  .starRateContainer {
+    width: 16px;
+    height: 16px;
+  }
+
+  .line {
+    margin: 6px 0;
+    height: 2px;
+    width: 45px;
+  }
+
+  .releaseDate {
+    font-size: 5px;
+    font-weight: 700;
+  }
+
+
+  .hiddenInfo {
+    bottom: 28px;
+    left: 10px;
+  }
+}
+
+@media (min-width:480px) {
+  .card {
+    width: 63px;
+  }
+
+  .imageContainer {
+    height: 100px;
+  }
+
+  .cardWrapper {
+    width: 400px
+  }
+
+  .cardsTitle {
+    font-size: 14px;
+  }
+
+  .image {
+    border-radius: 10px;
+  }
+
+  .cardTitle {
+    font-size: 8px;
+  }
+
+  .rating {
+    column-gap: 6px;
+  }
+
+  .rate {
+    font-size: 14px;
+  }
+
+  .starRateContainer {
+    width: 18px;
+    height: 18px;
+  }
+
+  .line {
+    margin: 6px 0;
+    height: 2px;
+    width: 45px;
+  }
+
+  .releaseDate {
+    font-size: 5px;
+    font-weight: 700;
+  }
+
+
+  .hiddenInfo {
+    bottom: 28px;
+    left: 10px;
+  }
+}
+
+@media (min-width:600px) {
+  .card {
+    width: 85px;
+  }
+
+  .imageContainer {
+    height: 120px;
+  }
+
+  .cardWrapper {
+    width: 580px
+  }
+
+  .cardsTitle {
+    font-size: 18px;
+  }
+
+  .image {
+    border-radius: 15px;
+  }
+
+  .cardTitle {
+    font-size: 10px;
+  }
+
+  .rating {
+    column-gap: 8px;
+  }
+
+  .rate {
+    font-size: 20px;
+  }
+
+  .starRateContainer {
+    width: 25px;
+    height: 25px;
+  }
+
+  .line {
+    margin: 8px 0;
+    height: 3px;
+    width: 60px;
+  }
+
+  .releaseDate {
+    font-size: 7px;
+    font-weight: 700;
+  }
+
+
+  .hiddenInfo {
+    bottom: 20px;
+    left: 14px;
+  }
+}
+
+@media (min-width:801px) {
+  .card {
+    width: 110px;
+  }
+
+  .imageContainer {
+    height: 170px;
+  }
+
+  .cardWrapper {
+    width: 730px
+  }
+
+
+  .cardsTitle {
+    font-size: 25px;
+  }
+
+  .cardTitle {
+    font-size: 12px;
+  }
+
+  .rating {
+    column-gap: 12px;
+  }
+
+  .rate {
+    font-size: 25px;
+  }
+
+  .starRateContainer {
+    width: 30px;
+    height: 30px;
+  }
+
+  .line {
+    margin: 10px 0;
+    height: 3px;
+    width: 80px;
+  }
+
+  .releaseDate {
+    font-size: 8px;
+    font-weight: 700;
+  }
+
+
+  .hiddenInfo {
+    bottom: 45px;
+    left: 16px;
+  }
+}
+
+@media (min-width:1025px) {
+  .card {
+    width: 140px;
+  }
+
+  .imageContainer {
+    height: 200px;
+  }
+
+  .cardWrapper {
+    width: 950px
+  }
+
+  .cardsTitle {
+    font-size: 25px;
+    margin: 35px 0px 20px 0;
+  }
+
+  .cardTitle {
+    font-size: 16px;
+  }
+
+  .rate {
+    font-size: 30px;
+  }
+
+  .starRateContainer {
+    width: 45px;
+    height: 45px;
+  }
+
+  .line {
+    margin: 15px 0;
+    height: 4px;
     width: 100px;
   }
 
-  .imageContainer {
-    height: 150px;
+  .releaseDate {
+    font-size: 12px;
+    font-weight: 700;
   }
 
+
+  .hiddenInfo {
+    bottom: 35px;
+    left: 16px;
+  }
+
+  .rating {
+    column-gap: 15px;
+  }
+}
+
+@media (min-width:1281px) {
+  .card {
+    width: 180px;
+  }
+
+  .imageContainer {
+    height: 290px;
+  }
+
+  .cardWrapper {
+    width: 1200px
+  }
+
+  .cardsTitle {
+    font-size: 34px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .rate {
+    font-size: 34px;
+  }
+
+  .starRateContainer {
+    width: 50px;
+    height: 50px;
+  }
+
+  .line {
+    margin: 20px 0;
+    height: 6px;
+    width: 120px;
+  }
+
+  .releaseDate {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .hiddenInfo {
+    bottom: 60px;
+    left: 16px;
+  }
 }
